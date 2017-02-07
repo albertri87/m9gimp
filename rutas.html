@@ -242,35 +242,47 @@
 <div id="about" class="container-fluid ">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text-left">
-      <h1 class="text-center top">Herramienta cubo de pintura</h1><br>
-      <img src="images/cubo.png" alt="" width="200" height="150" class="center-block">
+      <h1 class="text-center top">Herramienta rutas</h1><br>
+      <img src="images/rutas.png" alt="" width="200" height="150" class="center-block">
       <br>
-      <h3>Una herramienta que nos permite rellenar con un color o patrón el área seleccionada. </h3><br>
-      <p>Vamos a usar la herramienta lápiz, y vamos a crear una forma como un triángulo (con mayúsculas para conseguir las líneas rectas)</p>
-      <img src="images/foto1.png" alt="" class="imagen ">
-      <br>
-      <p>Tenemos el cubo de pintura, que me permite rellenar zonas con un color. Lo seleccionamos el cubo de pintura
-      y el color que queremos pintar</p>
-      <img src="images/foto2.png" alt="" class="imagen ">
-      <br>
-      <br>
-    Tipo de relleno:
-    <ul>
-      <li>Relleno con color de frente: vamos a rellenar con el color de frente que tengamos seleccionado (en la imagen de arriba, con marrón)</li>
-      <li>Relleno con color de fondo: vamos a rellenar con el color de frente que tengamos seleccionado (en la imagen de arriba, con blanco)</li>
-      <li>Relleno con patrón: vamos a rellenar con un patrón a elegir entre varios disponibles.</li>
-    </ul>
-    Area Afectada:
-    <ul>
-      <li>Rellenar la selección completamente: Si tenemos algo seleccionado en la imagen, se rellenará TODA la selección</li>
-      <li>Rellenar colores similares: si echamos el bote de pintura en un pixel de color amarillo, rellenará TODOS LOS PIXELS AMARILLOS QUE ESTÉN CONTIGUOS (umbral para seleccionar cuánto de diferente de color pueden ser los colores)</li>
-    </ul>
-    <img src="images/foto3.png" alt="" class="imagen">
-    <p>Echo el contenido del cubo de pintura dentro del rectángulo (<b>opciones elegidas para obtener la imagen de abajo: relleno con color de frente y Rellenar colores similares </b>)</p>  
-    <img src="images/foto4.png" alt="" class="imagen"> 
-    <p>Si tuvieramos <strong>Rellenar la selección completamente</strong>, se habría quedado TODA la imagen marrón, ya que no tenemos nada seleccionado, y por tanto la selección sería Todo.</p> 
-    <p>Podemos fijarnos que si hacemos un dibujo por encima y si le aplico un color, tapa lo que había antes y no hay forma de recuperarlo. Cuando usemos capas veremos que es diferente. Podría manejar como quisiera, no tendría por qué perder lo que hay abajo tal y como sucede trabajando sin capas.</p>
+      <h3>Las rutas son curvas (conocidas como curvas Bézier). En GIMP es muy fácil aprender a utilizarlas. La herramienta de rutas es muy potente para diseñar formas sofisticadas. Para utilizarla en GIMP primero debe crear una ruta y luego trazarla. </h3><br>
 
+      <p>En la terminología de GIMP, “trazar la ruta” significa aplicar un estilo específico a la ruta (color, anchura, patrón...).
+
+      Una ruta tiene dos propósitos principales:</p>
+      <ul>
+        <li>Puede convertir una ruta cerrada en una selección.</li>
+        <li>Una ruta, abierta o cerrada, se puede trazar; esto es, pintar sobre la imagen, en una variedad de formas.</li>
+      </ul>
+      
+      <h3>Ilustración de la creación de cuatro rutas diferentes</h3>
+      <img src="images/rutas2.png" alt="" class="imagen ">
+      <p>Cuatro ejemplos de rutas de GIMP: una cerrada y poligonal; una abierta y poligonal; una cerrada y curva; una con una combinación de segmentos rectos y curvos.</p>
+      <br>
+      <h3>Creación de rutas</h3>
+    
+      <br>
+      <br>
+      <p>Empiece dibujando el contorno de su ruta; el contorno se puede modificar después (consulte la herramienta Rutas). Para empezar, seleccione la herramienta de rutas usando uno de los métodos siguientes:</p>
+      <ul>
+        <li>Use Herramientas <img src="images/rutas.png" alt="" width="50" height="50">Ruta en el menú de la imagen.</li>
+        <li>Use el icono adecuado  en la caja de herramientas.</li>
+        <li>Use la tecla rápida B.</li>
+      </ul>
+      <p>Cuando se selecciona la herramienta de rutas, el cursor de ratón cambia a un puntero (flecha) con una curva. Una pulsación izquierda sobre la imagen crea el primer punto de la ruta. Mueva el ratón a un punto nuevo y pulse con el botón izquierdo del ratón para crear otro punto enlazado con el punto anterior. Aunque puede crear tantos puntos como quiera, sólo necesita dos puntos para aprender sobre las rutas. Mientras añade puntos, el cursor del ratón tiene una pequeña “+” cerca de la ruta, que indica que al pulsar se añadirá un punto nuevo. Cuando el cursor del ratón está cerca de una línea de segmento, el “+” cambia a una cruz de flechas; como la herramienta mover.</p>
+      <p>Mueva el cursor del ratón cerca de una línea de segmento, pulse con el izquierdo y arrastre la línea de segmento. Ocurren dos sucesos.</p>
+      <ul>
+        <li>La línea de segmento se curva según se tira.</li>
+        <li>Cada línea de segmento tiene un punto inicial y un punto final que están etiquetados con claridad. Ahora se proyecta una “línea de dirección” en cada punto final de la línea de segmento que se ha movido.</li>
+      </ul>
+     
+     <p>La línea de segmento curvada deja un punto final en la misma dirección en la que la “línea de dirección” deja el punto final. La longitud de la “línea de dirección” controla lo lejos que la línea del segmento se proyecta por la “línea de dirección” antes de curvar hacia arriba el otro punto final. Cada “línea de dirección” tiene una caja cuadrada vacía (llamado «tirador») en un extremo. Pulse y arrastre un ancla para cambiar la dirección y la longitud de una “línea de dirección”.</p>
+ <h3>Apariencia de una ruta mientras se manipula</h3> 
+<br>
+ <img src="images/rutas3.png" alt="">    
+
+
+   
     
     
       <br>
