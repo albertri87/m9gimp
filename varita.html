@@ -196,10 +196,21 @@
         font-size: 150px;
     }
   }
-
+/*  ESTILOS CUBO DE PINTURA*/
   .imagen {
     margin: 20px;
   }
+
+  .top {
+    margin-top: 100px;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  /*FINAL ESTILOS DE PINTURA*/
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -212,11 +223,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">GIMP</a>
+      <a class="navbar-brand" href="index.html">GIMP</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a href="herramientas.html">HERRAMIENTAS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
@@ -224,100 +235,97 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <img src="images/gimp-logo 1.png" width="50%">
-</div>
 
-<!-- Container (About us) -->
-
-<div class="container-fluid bg-grey">
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid ">
   <div class="row">
-    <div class="col-sm-3">
-      <!--<span class="glyphicon glyphicon-globe logo slideanim"></span>-->
+    <div class="col-sm-8 col-sm-offset-2 text-left">
+      <h1 class="text-center top">Herramienta Varita magica</h1><br>
+      <img src="images/varita.png" alt="" width="200" height="150" class="center-block">
+      <br>
+      <h3 class="text-center">Herramienta Varita Magica </h3><br>
+
+      <div class="text-center">
+        <iframe width="560" class="text-center" height="315" src="https://www.youtube.com/embed/7QF1OywbNpo" frameborder="0" allowfullscreen></iframe>
+      </div>
+		
+
+     
+
+      
+
+
+   
+    
+    
+      <br>
+      <!--<button class="btn btn-default btn-lg">Get in Touch</button>-->
     </div>
-    <div class="col-sm-6">
-    <h2>Que es</h2>
-    <p>GIMP (GNU Image Manipulation Program)<strong> es un programa de edición de imágenes digitales</strong> en forma de mapa de bits, 
-    tanto dibujos como fotografías. Es un programa libre y gratuito. Forma parte del proyecto GNU y está disponible bajo 
-    la Licencia pública general de GNU y GNU Lesser General Public License1</p>
-    <br>
-    <h2>Como usarlo</h2>
-    <p>GIMP <strong>tiene herramientas que se utilizan para el retoque y edición de imágenes, dibujo de formas libres, 
-    cambiar el tamaño, recortar, hacer fotomontajes, convertir a diferentes formatos de imagen, y otras tareas 
-    más especializadas.</strong> Se pueden también crear imágenes animadas en formato GIF e imágenes animadas en formato 
-    MPEG usando un plugin de animación.</p>
-  </div>  
+    <!--<div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+    -->
   </div>
 </div>
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>HERRAMIENTAS</h2>
+<!--<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+-->
 
+<!-- Container (Services Section) -->
+<!--<div id="services" class="container-fluid text-center">
+  <h2>HERRAMIENTAS</h2>
+  <h4>What we offer</h4>
   <br>
   <div class="row slideanim">
-    <div class="col-sm-4">
+    <div class="col-sm-4">->
       <!--<span class="glyphicon glyphicon-off logo-small"></span>-->
-      <a href="cubo.html"><img src="images/cubo-trans.png" alt="" class="imagen" width="70" height="70"></a>
+      <!--<img src="cubo-trans.png" alt="" class="imagen" width="70" height="70">
       <h4>CUBO DE PINTURA</h4>
-      
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <a href="tijeras.html"><img src="tijeras1.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>TIJERAS</h4>
-      
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <a href="borrar.html"><img src="borrar1.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>BORRAR</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <a href="lupa.html"><img src="lupa1.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>LUPA</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <a href="recogeColor.html"><img src="color1.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>COLOR</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <a href="herramientaMover.html"><img src="mover1.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>MOVER</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <a href="rutas.html"><img src="images/rutas.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>RUTAS</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <a href="perspectiva.html"><img src="images/perspectiva.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>PERSPECTIVA</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <a href="compas.html"><img src="images/compas.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>COMPAS</h4>
-      
-    </div>
-     <div class="col-sm-4">
-      <a href="aerografo.html"><img src="images/aerografo.png" alt="" class="imagen" width="70" height="70"></a>
-      <h4>AEROGRAFO</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <a href="varita.html"><img src="images/varita.png" alt="" class="imagen" width="120" height="120"></a>
-      <h4>YOUTUBE VIDEO VARITA MAGICA</h4>
-      
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
   <br><br>
- 
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
 </div>
-
-
+-->
 <!-- Container (Portfolio Section) -->
 <!--<div id="portfolio" class="container-fluid text-center bg-grey">-->
  <!-- <h2>Portfolio</h2><br>
